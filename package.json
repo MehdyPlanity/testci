@@ -6,16 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "prettier --check .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": ""
+    }
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MehdyPlanity/testci.git"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run format && git add -A ."
-    }
   },
   "author": "",
   "license": "ISC",
@@ -28,7 +29,7 @@
   },
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^8.0.1",
+    "husky": "^8.0.0",
     "prettier": "2.7.1"
   },
   "config": {
